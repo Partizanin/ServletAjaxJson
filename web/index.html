@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/newJs.js"></script>
+
+    <style>
+        input {
+            width: 25px;
+        }
+
+        .forms {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="forms"><input onkeyup="changedListener('+')" type="text" id="plus_num_1"> <label>+</label> <input
+        onkeyup="changedListener('+')" type="text" id="plus_num_2">
+    <label>=</label> <label id="plus_result"></label></div>
+
+<div class="forms"><input onkeyup="changedListener('-')" type="text" id="minus_num_1"> <label>-</label> <input
+        onkeyup="changedListener('-')" type="text" id="minus_num_2">
+    <label>=</label> <label id="minus_result"></label></div>
+
+</body>
+
+<div class="forms"><input onkeyup="changedListener('/')" type="text" id="divide_num_1"> <label>/</label> <input
+        onkeyup="changedListener('/')" type="text" id="divide_num_2">
+    <label>=</label> <label id="divide_result"></label></div>
+
+</body>
+
+<div class="forms"><input onkeyup="changedListener('*')" type="text" id="multiply_num_1"> <label>*</label> <input
+        onkeyup="changedListener('*')" type="text" id="multiply_num_2">
+    <label>=</label> <label id="multiply_result"></label></div>
+
+</body>
+</html>
